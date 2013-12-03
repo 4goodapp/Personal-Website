@@ -1,0 +1,73 @@
+<head>
+  <title>personal_site</title>
+</head>
+
+<body>
+  {{> header}}
+  {{home}}
+</body>
+
+<template name="header">
+    <!-- Static navbar -->
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Cory Trimm</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>{{#link route='home'}}Home{{/link}}</li>
+            <li>{{#link route='about'}}About{{/link}}</li>
+            <li><a href="http://www.corytrimm.com/blog">Blog</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+</template>
+
+<template name="home">
+	<div class="container">
+		<div class="row col-lg-6 col-lg-offset-3 text">
+			<h3>Cory Trimm</h3>
+			<h6>Web Developer, Life-Long Learner, & Explorer
+			<div class="icons">
+				<a href="http://www.twitter.com/cdt5058"><i class="fa fa-twitter-square fa-3x"></i></a>
+			  	<a href="http://www.facebook.com/cory.trimm"><i class="fa fa-facebook-square fa-3x"></i></a>
+			  	<a href="http://www.linkedin.com/profile/view?id=118738393"><i class="fa fa-linkedin-square fa-3x"></i></a>
+			  	<a href="https://github.com/ctrimm"><i class="fa fa-github-square fa-3x"></i></a>
+			</div>
+			<div class="external_links">
+				<a target="_blank" href="http://www.corytrimm.com/projects.php">Projects</a> | 
+				<a target="_blank" href="http://europe.corytrimm.com">Europe Blog</a> | 
+				<a target="_blank" href="http://www.corytrimm.com/blog">Generic Blog</a>
+			</div>
+		</div>
+	</div>
+</template>
+
+
+<template name="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+				<div class="row">
+					<div class="col-lg-4">
+						<img src="http://corytrimm.com/img/profile.jpg" class="img-rounded">
+					</div>
+					<div class="col-lg-8 about_text">
+						<h3>About</h3>
+						<h6>Cory Trimm is a freelance web developer that has traveled throughout 15+ countries this past summer and eventually wound up in Pittsburgh, PA. <br><br>
+						Currently he has been learning <a href="http://www.meteor.com" target="_blank">MeteorJS</a>, which this version of his website is built using. He has been working to create <a href="https://github.com/ctrimm/GitChat" target="_blank">GitChat</a> - a collaborative GitHub Chat system and issue tracker leveraging Meteor, as well as <a href="http://drawboard.meteor.com" target="_blank">DrawBoard</a> - a real-time HTML5 Canvas application for people to draw together on their own blackboards. <br><br>
+						This version of my website will eventually be updated to reflect something similar to the one that <a href="http://www.corytrimm.com" target="_blank">currently exists</a>.</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
